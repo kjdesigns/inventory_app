@@ -1,0 +1,48 @@
+<% include ./partials/header %>
+<div class="container">
+  
+ <table class="table text-center">
+    <thead>
+      <tr>
+        <th>ITEM</th>
+        <th>IMAGE</th>
+        <th>SIZE</th>
+        <th>AMOUNT REMAINING</th>
+        <th>PAR LEVEL</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+          <%inventory.forEach(function(inventory){%>
+          <tr>
+            <td>
+                <h1><%=inventory.item%></h1>
+              <div><a href="inventory/<%=inventory._id%>/edit">EDIT</a></div>
+              <div>
+                <form action="/inventory/<%=inventory._id%>?_method=DELETE" method="POST"><br>
+                <button>DELETE</button>
+                </form>
+              </div>
+            </td>
+            <td><img class="img-responsive thumbnail " width="150" height="150" src="<%=inventory.image%>"></td>
+            <td><h2><%=inventory.size%></h2></td>
+            
+              <% var item=inventory.amtRemaining; %>
+              <% var par = inventory.parLevel; %>
+              <%if(item<par || par ==null){%>
+                <td class="red"><%=item%></td>
+              <%}else{%>
+                <td class="blue"><%=item%></td>
+              <%}%>
+           
+            <td><%=inventory.parLevel%></td>
+          </tr>
+              
+          <%})%>
+        
+    </tbody>
+  </table>
+  
+</div>
+  
+  <% include ./partials/footer %>

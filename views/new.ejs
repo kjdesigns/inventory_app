@@ -1,0 +1,53 @@
+<% include ./partials/header %>
+<div class="container center_div">
+    <div class="text-center">
+        <img src="" class="img-responsive" id="showPageImg">
+    </div>
+    <form action="/inventory" method="POST" class="form-horizontal kform">
+        <div class="form-group">
+            <label class="control-label col-sm-2">ITEM</label>
+            <div class="col-sm-10">
+                <input class="form-control" type ="text" name="inventory[item]" placeholder="Input the new item">
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Image</label>
+            <div class="col-sm-10">
+                <input id="showPageImgInput" class="form-control"  type ="text" name="inventory[image]" placeholder="Input the image source of the item">
+            </div>
+                
+            
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">SIZE:</label>
+            <div class="col-sm-10">
+                <input class="form-control"  type ="text" name="inventory[size]" placeholder="SIZE if applicable if not i don't care">
+            </div>
+                
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">AMOUNT REMAINING</label>
+            <div class="col-sm-10">
+                <input class="form-control"  type ="number" name="inventory[amtRemaining]" placeholder="AMOUNT REMAINING">
+            </div>
+    
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Par Level</label>
+            <div class="col-sm-10">
+                <input class="form-control"  type ="number" name="inventory[parLevel]" placeholder="INPUT PAR LEVEL">
+            </div>
+    
+        </div>
+        <div class="form-group"> 
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </form>
+    
+    
+</div>
+
+
+<% include ./partials/footer %>

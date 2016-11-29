@@ -1,0 +1,52 @@
+.table th {
+    text-align: center;
+}
+
+.table img{
+    margin:0 auto;
+}
+
+
+.navbar-brand{
+    font-size:5em;
+    height: 80px;
+}
+
+.navbar-toggle {
+    margin-top: 25px;
+  }
+  
+.fa{
+    color:red;
+}
+
+a{
+   text-decoration: none;
+}
+
+
+.center_div{
+    margin: 0 auto;
+    width:60% /* value of your choice which suits your alignment */
+}
+
+.img-responsive {
+    margin: 0 auto;
+    width: auto;
+    height: 300px;
+}
+
+.kform{
+        margin-top: 50px;
+            
+}
+
+.red{
+    color:red;
+    font-size: xx-large;
+    font-weight: bolder;    ;
+}
+
+.blue{
+    color:blue;
+}
