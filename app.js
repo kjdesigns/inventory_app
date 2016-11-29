@@ -5,7 +5,8 @@ methodOverride = require("method-override"),
 bodyParser  = require("body-parser");
 
 //connect to a db
-mongoose.connect("mongodb://localhost/restful_inventory");
+//mongoose.connect("mongodb://localhost/restful_inventory");
+mongoose.connect("mongodb://ken:mfc@ds113678.mlab.com:13678/mfc_inventory");
 app.set("view engine","ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
