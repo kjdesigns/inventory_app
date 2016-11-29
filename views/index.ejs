@@ -17,15 +17,15 @@
           <tr>
             <td>
                 <h1><%=inventory.item%></h1>
-              <div><a href="inventory/<%=inventory._id%>/edit">EDIT</a></div>
+              <div><a  class="btn btn-info" href="inventory/<%=inventory._id%>/edit">EDIT</a></div>
               <div>
                 <form action="/inventory/<%=inventory._id%>?_method=DELETE" method="POST"><br>
-                <button>DELETE</button>
+                <button class="btn btn-danger">DELETE</button>
                 </form>
               </div>
             </td>
             <td><img class="img-responsive thumbnail " width="150" height="150" src="<%=inventory.image%>"></td>
-            <td><h2><%=inventory.size%></h2></td>
+            <td><h3 class="size"><%=inventory.size%></h3></td>
             
               <% var item=inventory.amtRemaining; %>
               <% var par = inventory.parLevel; %>

@@ -48,5 +48,12 @@ a{
 }
 
 .blue{
-    color:blue;
+    color:#2da958;
+    font-size:large;
+    font-weight: bold;
+}
+
+.size{
+    color:#a92d7e;
+    
 }
